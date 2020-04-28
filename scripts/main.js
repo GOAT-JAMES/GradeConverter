@@ -23,7 +23,7 @@ let cont = true;
 while (cont){
         
 
-let Grade = prompt("Enter a number/letter grade here:");
+let Grade = prompt("Enter a number/letter grade here (Q to quit):");
 
 if (Grade < 0){
     alert("Invalid number for a grade. Try Again.");
@@ -71,27 +71,27 @@ if (Grade < 0){
     
     */
     
-    else if (Grade == "A"){
+    else if (Grade == "A" || Grade == "a"){
         prompt("Excellent Job");
     }
 
-    else if (Grade == "B"){
+    else if (Grade == "B" || Grade == "b"){
         prompt("Good Work");
     }
 
-    else if (Grade == "C"){
+    else if (Grade == "C" || Grade == "c"){
         prompt("You need to put in more effort");
     }
 
-    else if (Grade == "D"){
+    else if (Grade == "D" || Grade == "d"){
         prompt("Uh oh, you should be reading and getting assignments in");
     }
 
-    else if (Grade == "F"){
+    else if (Grade == "F" || Grade == "f"){
         prompt("Please see the instructor");
     }
 
-    else if (Grade == "q"){
+    else if (Grade == "q" || Grade == "Q"){
         cont = false;
     }
 
